@@ -1,0 +1,6 @@
+resource_group_name       = "manual-spiritops-dev-test"
+resource_group_location   = "East US"
+openai_resource_name      = "manual-spiritops-openai"
+foundry_tool_name         = "spiritops-foundry-api"
+owner                     = "Jefferson"
+cost_center               = "Dev"
