@@ -52,3 +52,28 @@ variable "storage_account_1_account_kind" {
 variable "storage_account_2_account_kind" {
   type = string
 }
+variable "azurerm_service_plan_spiritopsasp051010_name" {
+  type = string
+}
+
+variable "azurerm_service_plan_spiritopsasp051010_sku" {
+  type = string
+}
+
+variable "azurerm_linux_web_app_spiritopsappserv005_name" {
+  type = string
+}
+
+
+variable "azurerm_linux_web_app_spiritopsappserv005_location" {
+  type = string
+}
+
+variable "app_minimum_tls_version" {
+  type = string
+}
+
+variable "spiritops_quota_region_21a8eb80dad7" {
+  description = "Approved App Service region after quota recovery"
+  type = string
+}
