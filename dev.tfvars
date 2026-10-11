@@ -33,3 +33,7 @@ function_app_settings = {
     value = "value2"
   }
 }
+storage_account_name     = "spiritopsfinal7890"
+account_tier             = "Standard"
+account_kind             = "StorageV2"
+account_replication_type = "LRS"

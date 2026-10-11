@@ -1,0 +1,33 @@
+{
+  "actor": "loavesflash@gmail.com",
+  "applied_at": null,
+  "approver": null,
+  "artifact_paths": {
+    "graphJson": ".spiritops/architecture/history/01M4P283QQ0GB7ZDXM2HKB2AQ4/graph.json",
+    "graphMmd": ".spiritops/architecture/history/01M4P283QQ0GB7ZDXM2HKB2AQ4/graph.mmd",
+    "graphSvg": ".spiritops/architecture/history/01M4P283QQ0GB7ZDXM2HKB2AQ4/graph.svg"
+  },
+  "blast_radius": 2,
+  "branch": "feature/rootmodule",
+  "build_id": "01M4P283QQ0GB7ZDXM2HKB2AQ4",
+  "commit_sha": "",
+  "created_at": "2026-10-11T18:05:23.307Z",
+  "diagram_hash": "36731986f2e946868f47db655a34ba93dfc44a40b3f2d814b310f4a10e208c49",
+  "drift_detected": false,
+  "duration_ms": null,
+  "intent_ids": [
+    "00ff4e29-a7b3-4616-976e-24f87ca9f86c"
+  ],
+  "parent_build_id": "01M4NR50VCAZQF62MH8DH1HND8",
+  "patch_id": "apply:00ff4e29-a7b3-4616-976e-24f87ca9f86c",
+  "plan_summary": {
+    "add": 1,
+    "destroy": 0,
+    "drift": 0,
+    "modify": 0,
+    "replace": 1
+  },
+  "repo": "jeffy555/trainer",
+  "status": "planned",
+  "workspace_id": "e1b3b924-66d4-8a1e-a6af-9bce6a547afa"
+}

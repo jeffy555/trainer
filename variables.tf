@@ -105,3 +105,22 @@ variable "function_app_settings" {
     value = string
   }))
 }
+variable "storage_account_name" {
+  description = "The name of the storage account."
+  type        = string
+}
+
+variable "account_tier" {
+  description = "The performance tier of the storage account."
+  type        = string
+}
+
+variable "account_kind" {
+  description = "The kind of the storage account."
+  type        = string
+}
+
+variable "account_replication_type" {
+  description = "The replication strategy for the storage account."
+  type        = string
+}

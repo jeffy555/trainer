@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1104 931" role="img" aria-labelledby="title description" data-build-id="01M4P283QQ0GB7ZDXM2HKB2AQ4">
+<title id="title">SpiritOps architecture</title>
+<desc id="description">Directional resource dependencies. Each node includes its change label and source link.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8cabb9"/></marker></defs>
+<rect width="1104" height="931" fill="#0b141b"/>
+<g font-family="sans-serif" fill="#e5f0f6"><text x="24" y="30" font-size="19">SpiritOps</text>
+<text x="24" y="53" font-size="12">Build 01M4P283QQ0GB7ZDXM2HKB2AQ4 · Source f9f05641 · Parent 01M4NR50VCAZQF62MH8DH1HND8</text>
+<text x="24" y="80" font-size="12" fill="#8cabb9">= Unchanged</text>
+<text x="156" y="80" font-size="12" fill="#45d99b">+ Create</text>
+<text x="288" y="80" font-size="12" fill="#f4c265">~ Modify</text>
+<text x="420" y="80" font-size="12" fill="#ff747e">− Destroy</text>
+<text x="552" y="80" font-size="12" fill="#ff747e">↻ Replace</text>
+<text x="684" y="80" font-size="12" fill="#ff9a4c">! Drift</text>
+<polyline points="214,484 370,184 412,184" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="328,534 370,534 552,534 734,534 830.95,477" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="219.16,584 370,826 552,826 734,826 776,817" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="230.52,584 370,748 412,748" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="304.67,484 370,456 412,456" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="230.52,484 370,320 412,320" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="304.67,584 370,612 412,612" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="580.35,698 734,427 776,427" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="692,748 734,748 776,757" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="692,320 734,320 830.95,377" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<g id="n1aa9f996867e10794bd2b5a1f2275eb432aa3a4db42c404cdebfda587b0256b3" data-address="azurerm_cognitive_account.manual_spiritops_openai" data-build-id="01M4P283QQ0GB7ZDXM2HKB2AQ4">
+<a href="https://github.com/jeffy555/trainer/blob/f9f05641364ffbf1a2e2268d92e49496d0867812/main.tf" aria-label="Open azurerm_cognitive_account.manual_spiritops_openai source">
+<title>azurerm_cognitive_account.manual_spiritops_openai — Unchanged</title><rect x="412" y="134" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="424" y="159" font-size="14">manual-spiritops-openai</text>
+<text x="424" y="182" font-size="11">azurerm_cognitive_account</text>
+<text x="424" y="211" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+<g id="n10530d51504cd49f03a7cbe387ef4d150e1d94ff11acc6a0b7c0211cd01231c7" data-address="azurerm_function_app.spiritopsfuncapp005" data-build-id="01M4P283QQ0GB7ZDXM2HKB2AQ4">
+<a href="https://github.com/jeffy555/trainer/blob/f9f05641364ffbf1a2e2268d92e49496d0867812/main.tf" aria-label="Open azurerm_function_app.spiritopsfuncapp005 source">
+<title>azurerm_function_app.spiritopsfuncapp005 — Replace</title><rect x="776" y="377" width="280" height="100" rx="10" fill="#12212b" stroke="#ff747e" stroke-width="2"/>
+<text x="788" y="402" font-size="14">spiritopsfuncapp005</text>
+<text x="788" y="425" font-size="11">azurerm_function_app</text>
+<text x="788" y="454" font-size="12" fill="#ff747e">↻ Replace</text>
+</a>
+</g>
+<g id="n8e04e6d34a51908ca4b2ae6edcc641e2a70247b9d5101fc6a3b7574c93f6564e" data-address="azurerm_linux_web_app.spiritopsappserv005" data-build-id="01M4P283QQ0GB7ZDXM2HKB2AQ4">
+<a href="https://github.com/jeffy555/trainer/blob/f9f05641364ffbf1a2e2268d92e49496d0867812/main.tf" aria-label="Open azurerm_linux_web_app.spiritopsappserv005 source">
+<title>azurerm_linux_web_app.spiritopsappserv005 — Unchanged</title><rect x="776" y="737" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="788" y="762" font-size="14">spiritopsappserv005</text>
+<text x="788" y="785" font-size="11">azurerm_linux_web_app</text>
+<text x="788" y="814" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+<g id="n762d54d5e87c26e298ce643b383efc403b4346c891c587d0daa9444031c4ce6e" data-address="azurerm_resource_group.manual_spiritops_dev_test" data-build-id="01M4P283QQ0GB7ZDXM2HKB2AQ4">
+<a href="https://github.com/jeffy555/trainer/blob/f9f05641364ffbf1a2e2268d92e49496d0867812/main.tf" aria-label="Open azurerm_resource_group.manual_spiritops_dev_test source">
+<title>azurerm_resource_group.manual_spiritops_dev_test — Unchanged</title><rect x="48" y="484" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="60" y="509" font-size="14">manual-spiritops-dev-test</text>
+<text x="60" y="532" font-size="11">azurerm_resource_group</text>
+<text x="60" y="561" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+<g id="n2a20be5e1e1cbea10bfd76484e82596dba6ac7b5819158bd99ab027bd4d50692" data-address="azurerm_service_plan.spiritopsasp051010" data-build-id="01M4P283QQ0GB7ZDXM2HKB2AQ4">
+<a href="https://github.com/jeffy555/trainer/blob/f9f05641364ffbf1a2e2268d92e49496d0867812/main.tf" aria-label="Open azurerm_service_plan.spiritopsasp051010 source">
+<title>azurerm_service_plan.spiritopsasp051010 — Unchanged</title><rect x="412" y="698" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="424" y="723" font-size="14">spiritopsasp051010</text>
+<text x="424" y="746" font-size="11">azurerm_service_plan</text>
+<text x="424" y="775" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+<g id="n48cc5de02cf54fc89a26ed5b565c9a28931dee19464aa0074587c2324a6c945a" data-address="azurerm_storage_account.spiritopsfinal7890" data-build-id="01M4P283QQ0GB7ZDXM2HKB2AQ4">
+<a href="https://github.com/jeffy555/trainer/blob/f9f05641364ffbf1a2e2268d92e49496d0867812/main.tf" aria-label="Open azurerm_storage_account.spiritopsfinal7890 source">
+<title>azurerm_storage_account.spiritopsfinal7890 — Create</title><rect x="412" y="406" width="280" height="100" rx="10" fill="#12212b" stroke="#45d99b" stroke-width="2"/>
+<text x="424" y="431" font-size="14">spiritopsfinal7890</text>
+<text x="424" y="454" font-size="11">azurerm_storage_account</text>
+<text x="424" y="483" font-size="12" fill="#45d99b">+ Create</text>
+</a>
+</g>
+<g id="ned6471c8e21752241dfd57f74e15eebbde7c642bd0bb4ce5e98cc8ae96e3c8fa" data-address="azurerm_storage_account.spiritopsintermisa" data-build-id="01M4P283QQ0GB7ZDXM2HKB2AQ4">
+<a href="https://github.com/jeffy555/trainer/blob/f9f05641364ffbf1a2e2268d92e49496d0867812/main.tf" aria-label="Open azurerm_storage_account.spiritopsintermisa source">
+<title>azurerm_storage_account.spiritopsintermisa — Unchanged</title><rect x="412" y="270" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="424" y="295" font-size="14">spiritopsintermisa</text>
+<text x="424" y="318" font-size="11">azurerm_storage_account</text>
+<text x="424" y="347" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+<g id="n70deea79ecff8272da901319ddd7fdcd91f10f951aa46cc4598df86b5d585375" data-address="azurerm_storage_account.spiritopspersa" data-build-id="01M4P283QQ0GB7ZDXM2HKB2AQ4">
+<a href="https://github.com/jeffy555/trainer/blob/f9f05641364ffbf1a2e2268d92e49496d0867812/main.tf" aria-label="Open azurerm_storage_account.spiritopspersa source">
+<title>azurerm_storage_account.spiritopspersa — Unchanged</title><rect x="412" y="562" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="424" y="587" font-size="14">spitiopspersa</text>
+<text x="424" y="610" font-size="11">azurerm_storage_account</text>
+<text x="424" y="639" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+</g></svg>

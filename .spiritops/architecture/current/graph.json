@@ -1,8 +1,8 @@
 {
   "context": {
-    "buildId": "01M4NR50VCAZQF62MH8DH1HND8",
-    "commitSha": "0ebb81a278bdb56096f6098cdd1a84e19354514c",
-    "parentBuildId": "01M4N7QZC9KV3Q2HAXS34YMQKQ",
+    "buildId": "01M4P283QQ0GB7ZDXM2HKB2AQ4",
+    "commitSha": "f9f05641364ffbf1a2e2268d92e49496d0867812",
+    "parentBuildId": "01M4NR50VCAZQF62MH8DH1HND8",
     "repo": "jeffy555/trainer",
     "workspace": "SpiritOps"
   },
@@ -26,6 +26,11 @@
       "label": "depends on",
       "source": "azurerm_resource_group.manual_spiritops_dev_test",
       "target": "azurerm_service_plan.spiritopsasp051010"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.manual_spiritops_dev_test",
+      "target": "azurerm_storage_account.spiritopsfinal7890"
     },
     {
       "label": "depends on",
@@ -73,7 +78,7 @@
       "source": {
         "path": "main.tf"
       },
-      "state": "create"
+      "state": "replace"
     },
     {
       "address": "azurerm_linux_web_app.spiritopsappserv005",
@@ -104,6 +109,16 @@
         "path": "main.tf"
       },
       "state": "unchanged"
+    },
+    {
+      "address": "azurerm_storage_account.spiritopsfinal7890",
+      "kind": "azurerm_storage_account",
+      "layer": "storage",
+      "name": "spiritopsfinal7890",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "create"
     },
     {
       "address": "azurerm_storage_account.spiritopsintermisa",

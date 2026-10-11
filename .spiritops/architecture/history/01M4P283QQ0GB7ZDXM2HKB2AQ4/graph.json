@@ -1,0 +1,145 @@
+{
+  "context": {
+    "buildId": "01M4P283QQ0GB7ZDXM2HKB2AQ4",
+    "commitSha": "f9f05641364ffbf1a2e2268d92e49496d0867812",
+    "parentBuildId": "01M4NR50VCAZQF62MH8DH1HND8",
+    "repo": "jeffy555/trainer",
+    "workspace": "SpiritOps"
+  },
+  "edges": [
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.manual_spiritops_dev_test",
+      "target": "azurerm_cognitive_account.manual_spiritops_openai"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.manual_spiritops_dev_test",
+      "target": "azurerm_function_app.spiritopsfuncapp005"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.manual_spiritops_dev_test",
+      "target": "azurerm_linux_web_app.spiritopsappserv005"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.manual_spiritops_dev_test",
+      "target": "azurerm_service_plan.spiritopsasp051010"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.manual_spiritops_dev_test",
+      "target": "azurerm_storage_account.spiritopsfinal7890"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.manual_spiritops_dev_test",
+      "target": "azurerm_storage_account.spiritopsintermisa"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.manual_spiritops_dev_test",
+      "target": "azurerm_storage_account.spiritopspersa"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_service_plan.spiritopsasp051010",
+      "target": "azurerm_function_app.spiritopsfuncapp005"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_service_plan.spiritopsasp051010",
+      "target": "azurerm_linux_web_app.spiritopsappserv005"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_storage_account.spiritopsintermisa",
+      "target": "azurerm_function_app.spiritopsfuncapp005"
+    }
+  ],
+  "generator": "spiritops-dagre-v1",
+  "nodes": [
+    {
+      "address": "azurerm_cognitive_account.manual_spiritops_openai",
+      "kind": "azurerm_cognitive_account",
+      "layer": "compute",
+      "name": "manual-spiritops-openai",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "unchanged"
+    },
+    {
+      "address": "azurerm_function_app.spiritopsfuncapp005",
+      "kind": "azurerm_function_app",
+      "layer": "compute",
+      "name": "spiritopsfuncapp005",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "replace"
+    },
+    {
+      "address": "azurerm_linux_web_app.spiritopsappserv005",
+      "kind": "azurerm_linux_web_app",
+      "layer": "compute",
+      "name": "spiritopsappserv005",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "unchanged"
+    },
+    {
+      "address": "azurerm_resource_group.manual_spiritops_dev_test",
+      "kind": "azurerm_resource_group",
+      "layer": "compute",
+      "name": "manual-spiritops-dev-test",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "unchanged"
+    },
+    {
+      "address": "azurerm_service_plan.spiritopsasp051010",
+      "kind": "azurerm_service_plan",
+      "layer": "compute",
+      "name": "spiritopsasp051010",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "unchanged"
+    },
+    {
+      "address": "azurerm_storage_account.spiritopsfinal7890",
+      "kind": "azurerm_storage_account",
+      "layer": "storage",
+      "name": "spiritopsfinal7890",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "create"
+    },
+    {
+      "address": "azurerm_storage_account.spiritopsintermisa",
+      "kind": "azurerm_storage_account",
+      "layer": "storage",
+      "name": "spiritopsintermisa",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "unchanged"
+    },
+    {
+      "address": "azurerm_storage_account.spiritopspersa",
+      "kind": "azurerm_storage_account",
+      "layer": "storage",
+      "name": "spitiopspersa",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "unchanged"
+    }
+  ],
+  "version": 1
+}

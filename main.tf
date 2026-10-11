@@ -80,3 +80,15 @@ resource "azurerm_function_app" "spiritopsfuncapp005" {
 
   tags = local.common_tags
 }
+resource "azurerm_storage_account" "spiritopsfinal7890" {
+  name                            = var.storage_account_name
+  resource_group_name             = azurerm_resource_group.manual_spiritops_dev_test.name
+  location                        = azurerm_resource_group.manual_spiritops_dev_test.location
+  account_tier                    = "Standard"
+  account_kind                    = "StorageV2"
+  account_replication_type        = "LRS"
+  allow_nested_items_to_be_public = false
+  https_traffic_only_enabled      = true
+  min_tls_version                 = "TLS1_2"
+  tags                            = local.common_tags
+}
