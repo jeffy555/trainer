@@ -16,3 +16,9 @@
 2 add · 1 modify · 0 destroy · 0 replace · 0 drift. Blast radius: 3/10.
 
 [Architecture](architecture/history/01M4KPY5PWJ6B1Q0DDEAZBJQEY/graph.svg)
+
+## Build 01M4N7QZC9KV3Q2HAXS34YMQKQ
+
+0 add · 0 modify · 0 destroy · 0 replace · 1 drift. Blast radius: 0/10.
+
+[Architecture](architecture/history/01M4N7QZC9KV3Q2HAXS34YMQKQ/graph.svg)

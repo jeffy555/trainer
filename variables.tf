@@ -1,5 +1,6 @@
 variable "owner" {
-  type = string
+  description = "Configuration input: owner."
+  type        = string
 }
 
 variable "cost_center" {
@@ -75,5 +76,5 @@ variable "app_minimum_tls_version" {
 
 variable "spiritops_quota_region_21a8eb80dad7" {
   description = "Approved App Service region after quota recovery"
-  type = string
+  type        = string
 }

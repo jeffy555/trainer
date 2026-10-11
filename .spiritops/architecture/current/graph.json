@@ -1,8 +1,8 @@
 {
   "context": {
-    "buildId": "01M4KPY5PWJ6B1Q0DDEAZBJQEY",
-    "commitSha": "d9be23f01367665304573f0dcf247195f4a3674e",
-    "parentBuildId": "01M4JEVP91SBQG5V0ZSH119W83",
+    "buildId": "01M4N7QZC9KV3Q2HAXS34YMQKQ",
+    "commitSha": "db609e337942d49cc2fcf62929a35db95091385c",
+    "parentBuildId": "01M4KPY5PWJ6B1Q0DDEAZBJQEY",
     "repo": "jeffy555/trainer",
     "workspace": "SpiritOps"
   },
@@ -58,7 +58,7 @@
       "source": {
         "path": "main.tf"
       },
-      "state": "create"
+      "state": "drift"
     },
     {
       "address": "azurerm_resource_group.manual_spiritops_dev_test",
@@ -78,7 +78,7 @@
       "source": {
         "path": "main.tf"
       },
-      "state": "create"
+      "state": "unchanged"
     },
     {
       "address": "azurerm_storage_account.spiritopsintermisa",
@@ -88,7 +88,7 @@
       "source": {
         "path": "main.tf"
       },
-      "state": "update"
+      "state": "unchanged"
     },
     {
       "address": "azurerm_storage_account.spiritopspersa",
