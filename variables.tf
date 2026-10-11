@@ -4,7 +4,8 @@ variable "owner" {
 }
 
 variable "cost_center" {
-  type = string
+  description = "Configuration input: cost center."
+  type        = string
 }
 
 variable "resource_group_name" {
@@ -77,4 +78,30 @@ variable "app_minimum_tls_version" {
 variable "spiritops_quota_region_21a8eb80dad7" {
   description = "Approved App Service region after quota recovery"
   type        = string
+}
+variable "function_app_name" {
+  description = "The name of the Azure Function App."
+  type        = string
+}
+
+variable "function_app_location" {
+  description = "The location of the Azure Function App, matching the App Service Plan."
+  type        = string
+}
+
+variable "function_app_storage_account" {
+  description = "The storage account to be used by the Function App."
+  type        = string
+}
+
+variable "function_app_runtime" {
+  description = "The runtime stack for the Function App, e.g., Node.js 14 LTS."
+  type        = string
+}
+variable "function_app_settings" {
+  description = "A map of app settings for the Azure Function App."
+  type = map(object({
+    name  = string
+    value = string
+  }))
 }

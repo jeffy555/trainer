@@ -13,8 +13,6 @@ resource "azurerm_cognitive_account" "manual_spiritops_openai" {
   tags                = local.common_tags
 }
 
-
-
 # Import the administrator-created project resource group.
 import {
   to = azurerm_resource_group.manual_spiritops_dev_test
@@ -67,6 +65,18 @@ resource "azurerm_linux_web_app" "spiritopsappserv005" {
     }
     minimum_tls_version = var.app_minimum_tls_version
   }
+
+  tags = local.common_tags
+}
+resource "azurerm_function_app" "spiritopsfuncapp005" {
+  name                       = var.function_app_name
+  location                   = var.function_app_location
+  resource_group_name        = azurerm_resource_group.manual_spiritops_dev_test.name
+  app_service_plan_id        = azurerm_service_plan.spiritopsasp051010.id
+  storage_account_name       = var.function_app_storage_account
+  storage_account_access_key = azurerm_storage_account.spiritopsintermisa.primary_access_key
+
+  app_settings = { for k, v in var.function_app_settings : v.name => v.value }
 
   tags = local.common_tags
 }

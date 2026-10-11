@@ -1,8 +1,8 @@
 {
   "context": {
-    "buildId": "01M4N7QZC9KV3Q2HAXS34YMQKQ",
-    "commitSha": "db609e337942d49cc2fcf62929a35db95091385c",
-    "parentBuildId": "01M4KPY5PWJ6B1Q0DDEAZBJQEY",
+    "buildId": "01M4NR50VCAZQF62MH8DH1HND8",
+    "commitSha": "0ebb81a278bdb56096f6098cdd1a84e19354514c",
+    "parentBuildId": "01M4N7QZC9KV3Q2HAXS34YMQKQ",
     "repo": "jeffy555/trainer",
     "workspace": "SpiritOps"
   },
@@ -11,6 +11,11 @@
       "label": "depends on",
       "source": "azurerm_resource_group.manual_spiritops_dev_test",
       "target": "azurerm_cognitive_account.manual_spiritops_openai"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.manual_spiritops_dev_test",
+      "target": "azurerm_function_app.spiritopsfuncapp005"
     },
     {
       "label": "depends on",
@@ -35,7 +40,17 @@
     {
       "label": "depends on",
       "source": "azurerm_service_plan.spiritopsasp051010",
+      "target": "azurerm_function_app.spiritopsfuncapp005"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_service_plan.spiritopsasp051010",
       "target": "azurerm_linux_web_app.spiritopsappserv005"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_storage_account.spiritopsintermisa",
+      "target": "azurerm_function_app.spiritopsfuncapp005"
     }
   ],
   "generator": "spiritops-dagre-v1",
@@ -51,6 +66,16 @@
       "state": "unchanged"
     },
     {
+      "address": "azurerm_function_app.spiritopsfuncapp005",
+      "kind": "azurerm_function_app",
+      "layer": "compute",
+      "name": "spiritopsfuncapp005",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "create"
+    },
+    {
       "address": "azurerm_linux_web_app.spiritopsappserv005",
       "kind": "azurerm_linux_web_app",
       "layer": "compute",
@@ -58,7 +83,7 @@
       "source": {
         "path": "main.tf"
       },
-      "state": "drift"
+      "state": "unchanged"
     },
     {
       "address": "azurerm_resource_group.manual_spiritops_dev_test",

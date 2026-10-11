@@ -19,3 +19,17 @@ azurerm_linux_web_app_spiritopsappserv005_location = "West US 2"
 app_minimum_tls_version                            = "1.2"
 
 spiritops_quota_region_21a8eb80dad7 = "westus2"
+function_app_name                   = "spiritopsfuncapp005"
+function_app_location               = "West US 2"
+function_app_storage_account        = "spiritopsintermisa"
+function_app_runtime                = "Node.js 14 LTS"
+function_app_settings = {
+  "setting1" = {
+    name  = "APP_SETTING_1"
+    value = "value1"
+  }
+  "setting2" = {
+    name  = "APP_SETTING_2"
+    value = "value2"
+  }
+}
